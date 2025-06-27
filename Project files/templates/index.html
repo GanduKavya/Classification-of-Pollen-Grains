@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pollen Classifier</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🌼 Welcome to Pollen Grain Classifier</h1>
+        <p>Select an image of a pollen grain to classify it.</p>
+        <form action="/predict" method="post" enctype="multipart/form-data">
+            <input type="file" name="file" accept="image/*" required>
+            <button type="submit">Predict Pollen Class</button>
+        </form>
+    </div>
+</body>
+</html>
